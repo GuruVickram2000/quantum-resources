@@ -1,0 +1,1069 @@
+/* =========================================================
+   CONTACT INFORMATION
+   ========================================================= */
+
+.qr-contact-info {
+    position: relative;
+
+    width: 100%;
+
+    padding: 110px 0;
+
+    background: #ffffff;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   CONTACT SECTION HEADING
+   ========================================================= */
+
+.qr-contact-heading {
+    width: 100%;
+    max-width: 1050px;
+    margin-bottom: 55px;
+}
+
+
+/* Eyebrow */
+
+.qr-contact-eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+
+    margin-bottom: 28px;
+
+    color: #c53232;
+
+    font-size: 0.76rem;
+    font-weight: 800;
+
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+}
+
+.qr-contact-eyebrow::before {
+    content: "";
+
+    width: 50px;
+    height: 2px;
+
+    background: #c53232;
+
+    flex-shrink: 0;
+}
+
+
+/* Heading */
+
+.qr-contact-heading h2 {
+    max-width: 850px;
+
+    margin: 0;
+
+    color: #001b45;
+
+    font-size: clamp(3rem, 5vw, 5rem);
+
+    font-weight: 800;
+
+    line-height: 1.02;
+
+    letter-spacing: -0.045em;
+}
+
+
+/* Red line */
+
+.qr-contact-line {
+    width: 68px;
+    height: 3px;
+
+    margin: 30px 0 30px;
+
+    background: #c53232;
+}
+
+
+/* Intro */
+
+.qr-contact-heading>p {
+    max-width: 900px;
+
+    margin: 0;
+
+    color: #536b86;
+
+    font-size: 1.05rem;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   CARDS GRID
+   ========================================================= */
+
+.qr-contact-cards {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 24px;
+
+    align-items: stretch;
+}
+
+
+/* =========================================================
+   CARD
+   ========================================================= */
+
+.qr-contact-card {
+
+    position: relative;
+
+    min-height: 430px;
+
+    padding: 40px;
+
+    overflow: hidden;
+
+    border: 1px solid #dce1e7;
+
+    border-radius: 12px;
+
+    background: #f5f8fb;
+
+    transition:
+        transform .4s cubic-bezier(.2, .7, .2, 1),
+        box-shadow .4s ease,
+        border-color .4s ease;
+}
+
+
+.qr-contact-card:hover {
+
+    transform: translateY(-6px);
+
+    border-color: rgba(197, 50, 50, .35);
+
+    box-shadow:
+        0 22px 50px rgba(8, 26, 49, .10);
+}
+
+
+/* =========================================================
+   TOP ROW
+   ========================================================= */
+
+.qr-contact-card-top {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 35px;
+}
+
+
+/* =========================================================
+   CARD ICON
+   ========================================================= */
+
+.qr-contact-card-icon {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 52px;
+
+    height: 52px;
+
+    border-radius: 8px;
+
+    background:#001b45;
+
+    color: #ffffff;
+
+    font-size: 1.25rem;
+
+    transition:
+        background .3s ease,
+        transform .3s ease;
+}
+
+
+.qr-contact-card:hover .qr-contact-card-icon {
+
+    background: #c53232;
+
+    transform: translateY(-3px);
+}
+
+
+/* =========================================================
+   CARD NUMBER
+   ========================================================= */
+
+.qr-contact-card-number {
+
+    color: #c53232;
+
+    font-size: .8rem;
+
+    font-weight: 800;
+
+    letter-spacing: .15em;
+}
+
+
+/* =========================================================
+   CARD TITLE
+   ========================================================= */
+
+.qr-contact-card h3 {
+
+    margin: 0 0 20px;
+
+    color:#001b45;
+
+    font-size: 1.7rem;
+
+    font-weight: 800;
+
+    line-height: 1.2;
+}
+
+
+/* =========================================================
+   CARD PARAGRAPH
+   ========================================================= */
+
+.qr-contact-card>p {
+
+    max-width: 520px;
+
+    margin: 0 0 18px;
+
+    color: #596678;
+
+    font-size: .98rem;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   CARD LINK
+   ========================================================= */
+
+.qr-contact-card-link {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-top: 15px;
+
+    color: #001b45;
+
+    font-size: .9rem;
+
+    font-weight: 700;
+
+    text-decoration: none;
+
+    transition:
+        color .3s ease;
+}
+
+
+.qr-contact-card-link i {
+
+    transition:
+        transform .3s ease;
+}
+
+
+.qr-contact-card-link:hover {
+
+    color: #c53232;
+}
+
+
+.qr-contact-card-link:hover i {
+
+    transform: translateX(5px);
+}
+
+
+/* =========================================================
+   ADDRESS CARD
+   ========================================================= */
+
+.qr-contact-address {
+
+    background:#001b45;
+
+    border-color:#001b45;
+
+    color: #ffffff;
+}
+
+
+.qr-contact-address h3 {
+
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   ADDRESS DETAILS
+   ========================================================= */
+
+.qr-contact-detail {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 16px;
+
+    padding: 18px 0;
+
+    border-top: 1px solid rgba(255, 255, 255, .12);
+}
+
+
+.qr-contact-detail:first-of-type {
+
+    margin-top: 5px;
+
+}
+
+
+/* =========================================================
+   DETAIL ICON
+   ========================================================= */
+
+.qr-contact-detail-icon {
+
+    flex: 0 0 36px;
+
+    width: 36px;
+
+    height: 36px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 6px;
+
+    background: rgba(255, 255, 255, .08);
+
+    color: #c53232;
+
+    font-size: .95rem;
+}
+
+
+/* =========================================================
+   DETAIL CONTENT
+   ========================================================= */
+
+.qr-contact-detail span {
+
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: #c53232;
+
+    font-size: .72rem;
+
+    font-weight: 800;
+
+    letter-spacing: .12em;
+
+    text-transform: uppercase;
+}
+
+
+.qr-contact-detail p {
+
+    margin: 0;
+
+    color: #d6dde9;
+
+    font-size: .92rem;
+
+    line-height: 1.7;
+}
+
+
+.qr-contact-detail strong {
+
+    color: #ffffff;
+
+    font-weight: 700;
+}
+
+
+.qr-contact-detail a {
+
+    color: #d6dde9;
+
+    font-size: .92rem;
+
+    text-decoration: none;
+
+    transition:
+        color .3s ease;
+}
+
+
+.qr-contact-detail a:hover {
+
+    color: #ffffff;
+
+    text-decoration: underline;
+
+    text-underline-offset: 3px;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 991px) {
+
+    .qr-contact-info {
+
+        padding: 80px 0;
+    }
+
+
+    .qr-contact-heading {
+
+        margin-bottom: 40px;
+    }
+
+
+    .qr-contact-cards {
+
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+    }
+
+
+    .qr-contact-card {
+
+        min-height: auto;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 575px) {
+
+    .qr-contact-info {
+
+        padding: 65px 0;
+    }
+
+
+    .qr-contact-heading h2 {
+
+        font-size: 2.4rem;
+    }
+
+
+    .qr-contact-heading>p {
+
+        font-size: .94rem;
+    }
+
+
+    .qr-contact-card {
+
+        padding: 28px;
+
+        border-radius: 10px;
+    }
+
+
+    .qr-contact-card h3 {
+
+        font-size: 1.45rem;
+    }
+
+
+    .qr-contact-card-top {
+
+        margin-bottom: 28px;
+    }
+
+
+    .qr-contact-detail {
+
+        gap: 12px;
+    }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .qr-contact-card,
+    .qr-contact-card-icon,
+    .qr-contact-card-link,
+    .qr-contact-card-link i {
+
+        transition: none;
+    }
+
+}
+
+/* =========================================================
+   ENQUIRY SECTION
+   ========================================================= */
+
+.qr-enquiry-section {
+    position: relative;
+    padding: 110px 0;
+    background: #f3f7fb;
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   CONTAINER
+   ========================================================= */
+
+.qr-enquiry-section .container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   ENQUIRY GRID
+   ========================================================= */
+
+.qr-enquiry-grid {
+    display: grid;
+
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+
+    align-items: center;
+
+    gap: 60px;
+
+    width: 100%;
+}
+
+
+/* =========================================================
+   LEFT CONTENT
+   ========================================================= */
+
+.qr-enquiry-content {
+    width: 100%;
+    max-width: 100%;
+}
+
+
+/* =========================================================
+   EYEBROW
+   ========================================================= */
+
+.qr-enquiry-eyebrow {
+    display: inline-flex;
+    align-items: center;
+
+    position: relative;
+
+    margin-bottom: 18px;
+    padding-left: 42px;
+
+    color: #c53232;
+
+    font-size: .72rem;
+    font-weight: 800;
+
+    letter-spacing: .18em;
+    text-transform: uppercase;
+}
+
+.qr-enquiry-eyebrow::before {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: 50%;
+
+    width: 28px;
+    height: 2px;
+
+    background: #c53232;
+
+    transform: translateY(-50%);
+}
+
+
+/* =========================================================
+   HEADING
+   ========================================================= */
+
+.qr-enquiry-content h2 {
+    margin: 0;
+
+    max-width: 520px;
+
+    color: #001b45;
+
+    font-size: clamp(2.4rem, 4vw, 3.6rem);
+
+    font-weight: 800;
+
+    line-height: 1.05;
+
+    letter-spacing: -.035em;
+}
+
+
+/* =========================================================
+   RED LINE
+   ========================================================= */
+
+.qr-enquiry-line {
+    width: 55px;
+    height: 3px;
+
+    margin: 24px 0 25px;
+
+    background: #c53232;
+}
+
+
+/* =========================================================
+   INTRO
+   ========================================================= */
+
+.qr-enquiry-intro {
+    max-width: 560px;
+
+    margin: 0 0 30px;
+
+    color: #596678;
+
+    font-size: .98rem;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   FORM
+   ========================================================= */
+
+.qr-enquiry-content form {
+    width: 100%;
+    margin-top: 10px;
+}
+
+
+/* =========================================================
+   FORM ROW
+   ========================================================= */
+
+.qr-enquiry-content .row {
+    width: 100%;
+}
+
+
+/* =========================================================
+   LABEL
+   ========================================================= */
+
+.qr-enquiry-content label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #001b45;
+
+    font-size: .88rem;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   INPUTS
+   ========================================================= */
+
+.qr-enquiry-content .form-control,
+.qr-enquiry-content .form-select {
+    width: 100%;
+
+    min-height: 52px;
+
+    padding: .8rem .9rem;
+
+    border: 1px solid #b8c2ce;
+
+    border-radius: 5px;
+
+    background: #ffffff;
+
+    color: #001b45;
+
+    font-size: .92rem;
+
+    box-shadow: none;
+
+    transition:
+        border-color .3s ease,
+        box-shadow .3s ease;
+}
+
+
+/* =========================================================
+   TEXTAREA
+   ========================================================= */
+
+.qr-enquiry-content textarea.form-control {
+    min-height: 150px;
+
+    resize: vertical;
+
+    padding-top: 14px;
+}
+
+
+/* =========================================================
+   PLACEHOLDER
+   ========================================================= */
+
+.qr-enquiry-content .form-control::placeholder {
+    color: #9aa4b1;
+}
+
+
+/* =========================================================
+   FOCUS
+   ========================================================= */
+
+.qr-enquiry-content .form-control:focus,
+.qr-enquiry-content .form-select:focus {
+
+    border-color: #c53232;
+
+    box-shadow:
+        0 0 0 3px rgba(197, 50, 50, .10);
+
+    outline: none;
+}
+
+
+/* =========================================================
+   BUTTON
+   ========================================================= */
+
+.qr-enquiry-btn {
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 12px;
+
+    margin-top: 28px;
+
+    padding: 14px 24px;
+
+    border: 0;
+
+    border-radius: 7px;
+
+    background: #c53232;
+
+    color: #ffffff;
+
+    font-weight: 700;
+
+    text-decoration: none;
+
+    transition:
+        background .3s ease,
+        transform .3s ease;
+}
+
+.qr-enquiry-btn:hover {
+    background: #001b45;
+
+    color: #ffffff;
+
+    transform: translateY(-2px);
+}
+
+.qr-enquiry-btn i {
+    transition: transform .3s ease;
+}
+
+.qr-enquiry-btn:hover i {
+    transform: translateX(5px);
+}
+
+
+/* =========================================================
+   ERROR
+   ========================================================= */
+
+.qr-enquiry-content .err {
+    color: #a4262c;
+
+    font-size: .82rem;
+
+    min-height: 1.1rem;
+
+    margin-top: 3px;
+}
+
+
+/* =========================================================
+   FORM NOTE
+   ========================================================= */
+
+.qr-enquiry-content .note {
+    margin-top: 15px;
+
+    color: #536070;
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   RIGHT IMAGE
+   ========================================================= */
+
+.qr-enquiry-image-wrap {
+    position: relative;
+
+    width: 100%;
+
+    padding: 0 0 0 18px;
+}
+
+
+/* =========================================================
+   IMAGE ACCENT
+   ========================================================= */
+
+.qr-enquiry-image-wrap::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 18px;
+    right: 18px;
+    bottom: -18px;
+    left: 0;
+
+    border: 1px solid #c53232;
+
+    z-index: 0;
+}
+
+
+/* =========================================================
+   IMAGE
+   ========================================================= */
+
+.qr-enquiry-image {
+    position: relative;
+    z-index: 1;
+
+    width: 100%;
+    height: 500px;
+
+    overflow: hidden;
+
+    border-radius: 14px;
+
+    background: #001b45;
+
+    box-shadow:
+        0 25px 55px rgba(0, 27, 69, .14);
+}
+
+/* =========================================================
+   IMAGE ELEMENT
+   ========================================================= */
+
+.qr-enquiry-image img {
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    transition:
+        transform 1s cubic-bezier(.2, .7, .2, 1);
+}
+
+
+/* =========================================================
+   IMAGE OVERLAY
+   ========================================================= */
+
+.qr-enquiry-image::after {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(180deg,
+            rgba(8, 26, 49, .02),
+            rgba(8, 26, 49, .20));
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   IMAGE HOVER
+   ========================================================= */
+
+.qr-enquiry-image:hover img {
+    transform: scale(1.04);
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 991px) {
+
+    .qr-enquiry-section {
+        padding: 80px 0;
+    }
+
+    .qr-enquiry-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 55px;
+    }
+
+    .qr-enquiry-content {
+        max-width: 750px;
+    }
+
+    .qr-enquiry-image-wrap {
+        max-width: 750px;
+
+        margin: 0 auto;
+
+        padding-left: 12px;
+    }
+
+    .qr-enquiry-image {
+        height: 450px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 575px) {
+
+    .qr-enquiry-section {
+        padding: 65px 0;
+    }
+
+    .qr-enquiry-grid {
+        gap: 40px;
+    }
+
+    .qr-enquiry-content h2 {
+        font-size: 2.35rem;
+    }
+
+    .qr-enquiry-intro {
+        font-size: .94rem;
+    }
+
+    .qr-enquiry-image-wrap {
+        padding-left: 8px;
+    }
+
+    .qr-enquiry-image {
+        height: 350px;
+
+        border-radius: 10px;
+    }
+
+    .qr-enquiry-image-wrap::before {
+        top: 10px;
+        right: 10px;
+        bottom: -10px;
+    }
+
+    .qr-enquiry-btn {
+        padding: 13px 20px;
+    }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .qr-enquiry-image img,
+    .qr-enquiry-btn,
+    .qr-enquiry-btn i {
+        transition: none;
+    }
+}

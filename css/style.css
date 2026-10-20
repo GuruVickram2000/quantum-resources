@@ -1,0 +1,2807 @@
+:root {
+    --navy: #001b45;
+    --navy2: #13294b;
+    --graph: #2b2f36;
+    --off: #f5f4f1;
+    --cu: #ab2b2b;
+    --ink: #1c2430;
+    --mut: #5d6672
+}
+
+/* =========================================================
+   GLOBAL FONT — POPPINS
+   ========================================================= */
+
+html,
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+body,
+button,
+input,
+textarea,
+select,
+option {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+span,
+li,
+label,
+button,
+input,
+textarea,
+select {
+    font-family: 'Poppins', sans-serif;
+}
+
+* {
+    box-sizing: border-box
+}
+
+html {
+    scroll-behavior: smooth
+}
+
+body {
+    font-family: 'Manrope', system-ui, sans-serif;
+    color: var(--ink);
+    background: #fff;
+    overflow-x: hidden;
+    line-height: 1.65
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 800;
+    letter-spacing: -.02em;
+    line-height: 1.12
+}
+
+h2 {
+    font-size: clamp(1.8rem, 3.4vw, 2.8rem);
+    margin-bottom: 1.5rem
+}
+
+a {
+    color: inherit
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid var(--cu);
+    outline-offset: 3px
+}
+
+.sec {
+    padding: 96px 0
+}
+
+.sec-alt {
+    background: var(--off)
+}
+
+.dark {
+    background: var(--navy);
+    color: #fff
+}
+
+.dark p {
+    color: #cfd6e2
+}
+
+.btn {
+    border-radius: 12px;
+    font-weight: 700;
+    padding: .85rem 1.6rem;
+    transition: all .35s cubic-bezier(.2, .7, .2, 1)
+}
+
+.btn i {
+    display: inline-block;
+    margin-left: .4rem;
+    transition: transform .35s
+}
+
+.btn:hover i {
+    transform: translateX(6px)
+}
+
+.btn-qr {
+    background: var(--cu);
+    color: #fff;
+    border: 1px solid var(--cu)
+}
+
+.btn-qr:hover {
+    background: #001b45;
+    color: #fff
+}
+
+.btn-line {
+    border: 1px solid currentColor;
+    color: inherit
+}
+
+.btn-line:hover {
+    background: var(--navy);
+    color: #fff
+}
+
+.hero .btn-line {
+    color: #fff
+}
+
+.hero .btn-line:hover {
+    background: #fff;
+    color: var(--navy)
+}
+
+.media {
+    overflow: hidden;
+    background: linear-gradient(135deg, var(--navy2), var(--graph));
+    min-height: 280px;
+    height: 100%
+}
+
+.media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 1.2s cubic-bezier(.2, .7, .2, 1)
+}
+
+.media:hover img {
+    transform: scale(1.05)
+}
+
+img.img-missing {
+    opacity: 0
+}
+
+.big {
+    font-size: clamp(1.15rem, 2vw, 1.55rem);
+    max-width: 60ch
+}
+
+.tag {
+    color: var(--cu);
+    font-weight: 700
+}
+
+.chips {
+    color: var(--mut);
+    font-weight: 500
+}
+
+.tl {
+    list-style: none;
+    padding: 0;
+    margin: 0
+}
+
+.tl li {
+    padding: .55rem 0 .55rem 1.4rem;
+    border-bottom: 1px solid rgba(128, 128, 128, .25);
+    position: relative
+}
+
+.tl li:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 1.15rem;
+    width: .55rem;
+    height: 2px;
+    background: var(--cu)
+}
+
+.spec {
+    border-left: 3px solid var(--cu);
+    padding: .2rem 0 .2rem 1rem;
+    margin: 1.2rem 0
+}
+
+.spec b {
+    display: block;
+    font-size: 1.7rem
+}
+
+.spec span {
+    color: var(--mut)
+}
+
+.tech-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+    gap: 0;
+    border-top: 1px solid #cfd4db
+}
+
+.tech-list li {
+    padding: 1.1rem .5rem;
+    border-bottom: 1px solid #cfd4db;
+    border-right: 1px solid #cfd4db;
+    font-weight: 700;
+    transition: background .3s, color .3s
+}
+
+.tech-list li:hover {
+    background: var(--navy);
+    color: #fff
+}
+
+.sec-tech {
+    background: #fff
+}
+
+.checks {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: .8rem
+}
+
+.checks i {
+    color: var(--cu);
+    margin-right: .6rem
+}
+
+.two-col .pane {
+    padding: 48px;
+    height: 100%;
+    background: var(--off)
+}
+
+.two-col .pane-d {
+    background: var(--graph);
+    color: #fff
+}
+
+.pane h2 {
+    font-size: 1.7rem
+}
+
+.steps {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 0;
+    position: relative
+}
+
+.steps li {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    padding: 1.2rem 0;
+    border-bottom: 1px solid rgba(128, 128, 128, .3);
+    font-size: 1.2rem;
+    font-weight: 700
+}
+
+.steps b {
+    color: var(--cu);
+    font-size: 1.6rem;
+    min-width: 3rem
+}
+
+@media(min-width:992px) {
+    .sec-verts+* {}
+}
+
+.person {
+    border-top: 3px solid var(--cu);
+    padding: 1.5rem 0
+}
+
+/* Leadership initials box */
+.person .ini {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 114px;
+    height: 114px;
+
+    border-radius: 12px;
+    /* curved edges */
+
+    background: var(--navy);
+    color: #fff;
+
+    font-size: 1.8rem;
+    font-weight: 800;
+
+    margin-bottom: 16px;
+
+    transition:
+        border-radius 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+/* Optional hover effect */
+.person:hover .ini {
+    border-radius: 18px;
+    transform: translateY(-4px);
+
+    box-shadow: 0 12px 25px rgba(8, 26, 49, 0.18);
+}
+
+.person h3 {
+    font-size: 1.15rem
+}
+
+.person p {
+    color: var(--mut)
+}
+
+.to-top {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 46px;
+    height: 46px;
+    border: 0;
+    background: var(--cu);
+    color: #fff;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .3s
+}
+
+.to-top.show {
+    opacity: 1;
+    pointer-events: auto
+}
+
+.progress-line {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 3px;
+    width: 0;
+    background: var(--cu);
+    z-index: 2000
+}
+
+.eyebrow {
+    letter-spacing: .2em;
+    font-size: .8rem;
+    font-weight: 700;
+    color: var(--cu);
+    margin-bottom: 1rem
+}
+
+.flow {
+    list-style: none;
+    padding: 0;
+    margin: 2rem 0 0;
+    display: grid;
+    grid-template-columns: repeat(var(--n, 5), 1fr);
+    position: relative
+}
+
+.flow[data-n="5"] {
+    --n: 5
+}
+
+.flow[data-n="7"] {
+    --n: 7
+}
+
+.flow:before {
+    content: "";
+    position: absolute;
+    top: 22px;
+    left: 6%;
+    right: 6%;
+    height: 2px;
+    background: repeating-linear-gradient(90deg, var(--cu) 0 10px, transparent 10px 20px);
+    animation: dash 1.2s linear infinite
+}
+
+.flow li {
+    position: relative;
+    text-align: center;
+    padding: 62px .5rem 0;
+    font-weight: 700;
+    font-size: 1rem
+}
+
+.flow li b {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background: var(--navy);
+    color: #fff;
+    border: 2px solid var(--cu);
+    display: grid;
+    place-items: center;
+    font-size: .85rem
+}
+
+.dark .flow li b,
+.hero-tech .flow li b {
+    background: var(--cu)
+}
+
+@media(max-width:767px) {
+    .flow {
+        grid-template-columns: 1fr !important
+    }
+
+    .flow:before {
+        left: 22px;
+        right: auto;
+        top: 0;
+        bottom: 0;
+        width: 2px;
+        height: auto;
+        background: repeating-linear-gradient(180deg, var(--cu) 0 10px, transparent 10px 20px)
+    }
+
+    .flow li {
+        text-align: left;
+        padding: .5rem 0 1.6rem 70px
+    }
+
+    .flow li b {
+        left: 0;
+        transform: none
+    }
+}
+
+.big-i {
+    font-size: 2.2rem;
+    color: var(--cu)
+}
+
+.spec-row {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap
+}
+
+.metric {
+    padding: 2rem 1.2rem;
+    border: 1px solid #cfd4db;
+    margin: -1px 0 0 -1px;
+    font-weight: 700;
+    position: relative;
+    overflow: hidden;
+    height: 100%
+}
+
+.metric span {
+    display: block;
+    color: var(--cu);
+    font-size: .85rem
+}
+
+.metric i {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background: var(--cu);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .5s cubic-bezier(.2, .7, .2, 1)
+}
+
+.metric:hover i {
+    transform: scaleX(1)
+}
+
+.owner .media {
+    min-height: 420px
+}
+
+
+
+
+/* =========================================================
+EXPERIENCE SECTION
+========================================================= */
+
+.experience-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.experience-content {
+    max-width: 620px;
+}
+
+.section-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 18px;
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.18em;
+    color: var(--copper, #ab2b2b);
+}
+
+.section-eyebrow::before {
+    content: "";
+    width: 34px;
+    height: 1px;
+    background: var(--copper, #ab2b2b);
+}
+
+.experience-content h2 {
+    margin: 0;
+    max-width: 600px;
+    font-size: clamp(2.4rem, 4vw, 4.2rem);
+    line-height: 1.04;
+    letter-spacing: -0.04em;
+}
+
+.experience-content h2 span {
+    display: block;
+    color: var(--copper, #ab2b2b);
+}
+
+.experience-line {
+    width: 70px;
+    height: 3px;
+    margin: 28px 0;
+    background: var(--copper, #ab2b2b);
+}
+
+.experience-content p {
+    max-width: 590px;
+    line-height: 1.8;
+}
+
+/* =========================================================
+IMAGE COMPOSITION
+========================================================= */
+
+.experience-visual {
+    position: relative;
+    min-height: 560px;
+    padding: 25px 35px 45px 25px;
+}
+
+.experience-frame {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 82%;
+    height: 88%;
+    border: 1px solid rgba(241, 6, 6, 0.45);
+    transform: translate(18px, -18px);
+    pointer-events: none;
+}
+
+.experience-image {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 4px;
+    background: #101820;
+    box-shadow: 0 30px 70px rgba(0, 0, 0, 0.22);
+}
+
+.experience-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform 1.2s cubic-bezier(.2, .7, .2, 1);
+}
+
+.experience-image:hover img {
+    transform: scale(1.07);
+}
+
+.experience-overlay {
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(180deg,
+            rgba(4, 14, 23, 0.05) 20%,
+            rgba(4, 14, 23, 0.78) 100%);
+}
+
+/* =========================================================
+IMAGE LABEL
+========================================================= */
+
+.experience-label {
+    position: absolute;
+    left: 32px;
+    bottom: 30px;
+    z-index: 3;
+    color: #fff;
+}
+
+.experience-label span {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    opacity: 0.7;
+}
+
+.experience-label strong {
+    font-size: 1.35rem;
+    font-weight: 700;
+}
+
+/* =========================================================
+FLOATING EXPERIENCE CARD
+========================================================= */
+
+.experience-card {
+    position: absolute;
+    z-index: 4;
+    left: -10px;
+    bottom: 25px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    min-width: 245px;
+    padding: 20px 24px;
+    background: #fff;
+    border-left: 4px solid var(--copper, #ab2b2b);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.18);
+}
+
+.experience-card-number {
+    font-size: 2.7rem;
+    line-height: 1;
+    font-weight: 800;
+    color: #142331;
+}
+
+.experience-card-number span {
+    color: var(--copper, #ab2b2b);
+}
+
+.experience-card-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.experience-card-content strong {
+    font-size: 0.95rem;
+    color: #142331;
+}
+
+.experience-card-content span {
+    margin-top: 3px;
+    max-width: 130px;
+    font-size: 0.7rem;
+    line-height: 1.4;
+    color: #6d747a;
+}
+
+/* =========================================================
+ESTABLISHED YEAR
+========================================================= */
+
+.experience-year {
+    position: absolute;
+    z-index: 4;
+    top: 40px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 82px;
+    height: 82px;
+    background: var(--copper, #ab2b2b);
+    color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.experience-year span {
+    font-size: 0.55rem;
+    letter-spacing: 0.18em;
+    opacity: 0.8;
+}
+
+.experience-year strong {
+    font-size: 1.2rem;
+    line-height: 1;
+}
+
+/* =========================================================
+RESPONSIVE
+========================================================= */
+
+@media (max-width: 991.98px) {
+    .experience-visual {
+        min-height: 500px;
+        margin-top: 20px;
+    }
+
+    .experience-image {
+        height: 460px;
+    }
+
+    .experience-card {
+        left: 10px;
+    }
+
+}
+
+@media (max-width: 575.98px) {
+
+    .experience-content h2 {
+        font-size: 2.3rem;
+    }
+
+    .experience-visual {
+        min-height: 430px;
+        padding: 15px 15px 35px 15px;
+    }
+
+    .experience-frame {
+        width: 86%;
+        height: 82%;
+        transform: translate(10px, -10px);
+    }
+
+    .experience-image {
+        height: 390px;
+    }
+
+    .experience-label {
+        left: 20px;
+        bottom: 22px;
+    }
+
+    .experience-card {
+        left: 0;
+        bottom: 5px;
+        min-width: 215px;
+        padding: 16px 18px;
+    }
+
+    .experience-card-number {
+        font-size: 2.2rem;
+    }
+
+    .experience-year {
+        top: 25px;
+        left: 5px;
+        width: 68px;
+        height: 68px;
+    }
+
+
+}
+
+
+/* =========================================================
+   BUSINESS VERTICAL IMAGE
+   ========================================================= */
+
+.sec-verts .vert .media {
+    width: 100%;
+    height: 520px;
+    min-height: 520px;
+    overflow: hidden;
+    position: relative;
+    background: var(--navy2);
+}
+
+.sec-verts .vert .media img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 1.2s cubic-bezier(.2, .7, .2, 1);
+}
+
+@media (max-width: 991px) {
+    .sec-verts .vert .media {
+        height: 420px;
+        min-height: 420px;
+    }
+}
+
+@media (max-width: 575px) {
+    .sec-verts .vert .media {
+        height: 320px;
+        min-height: 320px;
+    }
+}
+
+
+/* =========================================================
+   INDUSTRIES GRID - ROUNDED CARDS
+   ========================================================= */
+
+.ind-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.ind {
+    position: relative;
+    display: block;
+    height: 320px;
+    overflow: hidden;
+    border-radius: 10px;
+    /* lightly rounded edges */
+    text-decoration: none;
+    background: var(--navy);
+    isolation: isolate;
+}
+
+/* Image */
+.ind img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.8s cubic-bezier(.2, .7, .2, 1);
+}
+
+/* Dark bottom gradient */
+.ind::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: linear-gradient(to top,
+            rgba(5, 17, 35, 0.95) 0%,
+            rgba(5, 17, 35, 0.55) 35%,
+            rgba(5, 17, 35, 0.05) 75%);
+    pointer-events: none;
+}
+
+/* Industry title */
+.ind span {
+    position: absolute;
+    left: 22px;
+    bottom: 20px;
+    z-index: 2;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    color: #fff;
+    font-size: 1.05rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+/* Icon */
+.ind span i {
+    color: var(--cu);
+    font-size: 1.25rem;
+    flex-shrink: 0;
+}
+
+/* Hover */
+.ind:hover img {
+    transform: scale(1.05);
+}
+
+.ind:hover {
+    text-decoration: none;
+}
+
+/* Slightly stronger hover shadow */
+.ind:hover {
+    box-shadow: 0 14px 35px rgba(0, 0, 0, 0.16);
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 991px) {
+
+    .ind-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .ind {
+        height: 300px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 575px) {
+
+    .ind-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .ind {
+        height: 280px;
+        border-radius: 9px;
+    }
+
+    .ind span {
+        left: 18px;
+        bottom: 18px;
+        font-size: 1rem;
+    }
+}
+
+/* =========================================================
+   QUANTUM RESOURCES - CTA SECTION
+   ========================================================= */
+
+.cta {
+    position: relative;
+    min-height: 470px;
+    padding: 95px 0 90px;
+    overflow: hidden;
+    isolation: isolate;
+
+    display: flex;
+    align-items: center;
+
+    background: #081a31;
+    color: #fff;
+}
+
+/* ---------------------------------------------------------
+   Background Image
+   --------------------------------------------------------- */
+
+.cta .hero-bg {
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+    overflow: hidden;
+}
+
+.cta .hero-bg img {
+    width: 100%;
+    height: 100%;
+    display: block;
+
+    object-fit: cover;
+    object-position: center 58%;
+
+    transform: scale(1.02);
+}
+
+/* ---------------------------------------------------------
+   Premium dark overlay
+   --------------------------------------------------------- */
+
+.cta::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+
+    background:
+        linear-gradient(90deg,
+            rgba(5, 20, 39, 0.94) 0%,
+            rgba(8, 27, 51, 0.86) 38%,
+            rgba(8, 27, 51, 0.62) 68%,
+            rgba(8, 27, 51, 0.42) 100%);
+}
+
+/* Subtle bottom fade */
+.cta::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 120px;
+
+    z-index: -1;
+
+    background: linear-gradient(to top,
+            rgba(5, 18, 35, 0.75),
+            transparent);
+
+    pointer-events: none;
+}
+
+/* ---------------------------------------------------------
+   Content
+   --------------------------------------------------------- */
+
+.cta .container {
+    position: relative;
+    z-index: 2;
+}
+
+.cta h2 {
+    max-width: 900px;
+    margin: 0 0 24px;
+
+    color: #fff;
+    font-size: clamp(2.5rem, 5vw, 4.2rem);
+    font-weight: 800;
+    line-height: 1.05;
+    letter-spacing: -0.035em;
+}
+
+.cta p {
+    max-width: 760px;
+    margin: 0 0 30px;
+
+    color: rgba(255, 255, 255, 0.88);
+
+    font-size: 1.08rem;
+    line-height: 1.8;
+}
+
+/* ---------------------------------------------------------
+   CTA Button
+   --------------------------------------------------------- */
+
+.cta .btn-qr {
+    display: inline-flex;
+    width: auto;
+
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    padding: 15px 25px;
+
+    background: var(--cu);
+    color: #fff;
+
+    border: 1px solid var(--cu);
+    border-radius: 12px;
+
+    font-weight: 700;
+    text-decoration: none;
+
+    transition:
+        background-color 0.3s ease,
+        border-color 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.cta .btn-qr i {
+    font-size: 1.1rem;
+    transition: transform 0.3s ease;
+}
+
+.cta .btn-qr:hover {
+    background: #fff;
+    border-color: #fff;
+    color: var(--navy);
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.22);
+}
+
+.cta .btn-qr:hover i {
+    transform: translateX(4px);
+}
+
+
+/* =========================================================
+   CTA REVEAL SAFETY
+   Prevent the global reveal animation from hiding CTA
+   content if JS fails or doesn't add .in.
+   ========================================================= */
+
+.cta .reveal {
+    opacity: 1;
+    transform: none;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 991px) {
+
+    .cta {
+        min-height: 440px;
+        padding: 80px 0;
+    }
+
+    .cta .hero-bg img {
+        object-position: center center;
+    }
+
+    .cta h2 {
+        max-width: 720px;
+    }
+
+    .cta p {
+        max-width: 650px;
+        font-size: 1rem;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 575px) {
+
+    .cta {
+        min-height: auto;
+        padding: 70px 0;
+    }
+
+    .cta::before {
+        background:
+            linear-gradient(90deg,
+                rgba(5, 20, 39, 0.93),
+                rgba(8, 27, 51, 0.82));
+    }
+
+    .cta .hero-bg img {
+        object-position: 60% center;
+    }
+
+    .cta h2 {
+        font-size: 2.25rem;
+        line-height: 1.08;
+        margin-bottom: 20px;
+    }
+
+    .cta p {
+        font-size: 0.96rem;
+        line-height: 1.7;
+        margin-bottom: 26px;
+    }
+
+    .cta .btn-qr {
+        width: auto;
+        max-width: 100%;
+        padding: 14px 20px;
+    }
+}
+
+
+/* =========================================================
+   QUANTUM RESOURCES
+   PROJECT CTA SECTION
+   Completely independent styles
+   ========================================================= */
+
+.qr-project-cta {
+    position: relative;
+    width: 100%;
+    min-height: 430px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 70px 0;
+
+    overflow: hidden;
+    isolation: isolate;
+
+    background: #081a31;
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   BACKGROUND IMAGE
+   ========================================================= */
+
+.qr-project-cta-bg {
+    position: absolute;
+    inset: 0;
+    z-index: -3;
+
+    overflow: hidden;
+}
+
+.qr-project-cta-bg img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center center;
+
+    transform: scale(1.02);
+}
+
+
+/* =========================================================
+   IMAGE OVERLAY
+   ========================================================= */
+
+.qr-project-cta-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+
+    background:
+        linear-gradient(90deg,
+            rgba(5, 20, 39, 0.94) 0%,
+            rgba(7, 25, 46, 0.86) 38%,
+            rgba(8, 28, 52, 0.62) 70%,
+            rgba(8, 28, 52, 0.42) 100%);
+}
+
+
+/* =========================================================
+   CONTENT CONTAINER
+   ========================================================= */
+
+.qr-project-cta-container {
+    position: relative;
+    z-index: 2;
+
+    width: 100%;
+    max-width: 1140px;
+
+    margin: 0 auto;
+
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+/* =========================================================
+   HEADING
+   ========================================================= */
+
+.qr-project-cta-title {
+    margin: 0 0 22px;
+
+    max-width: 800px;
+
+    color: #ffffff;
+
+    font-size: 3.4rem;
+    font-weight: 800;
+
+    line-height: 1.08;
+    letter-spacing: -0.035em;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+   ========================================================= */
+
+.qr-project-cta-text {
+    max-width: 720px;
+
+    margin: 0 0 30px;
+
+    color: rgba(255, 255, 255, 0.88);
+
+    font-size: 1.05rem;
+    font-weight: 400;
+
+    line-height: 1.75;
+}
+
+
+/* =========================================================
+   BUTTON
+   ========================================================= */
+
+.qr-project-cta-button {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 12px;
+
+    width: auto;
+
+    padding: 15px 25px;
+
+    background: #c53232;
+    color: #ffffff;
+
+    border: 1px solid #c53232;
+    border-radius: 12px;
+
+    font-size: 1rem;
+    font-weight: 700;
+
+    line-height: 1;
+
+    text-decoration: none;
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        border-color 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.qr-project-cta-button i {
+    font-size: 1.15rem;
+
+    transition:
+        transform 0.3s ease;
+}
+
+
+/* =========================================================
+   BUTTON HOVER
+   ========================================================= */
+
+.qr-project-cta-button:hover {
+    background: #ffffff;
+    border-color: #ffffff;
+
+    color: #081a31;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.22);
+}
+
+.qr-project-cta-button:hover i {
+    transform: translateX(5px);
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 991px) {
+
+    .qr-project-cta {
+        min-height: 400px;
+
+        padding: 65px 0;
+    }
+
+    .qr-project-cta-container {
+        max-width: 960px;
+
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .qr-project-cta-title {
+        max-width: 700px;
+
+        font-size: 2.8rem;
+    }
+
+    .qr-project-cta-text {
+        max-width: 650px;
+
+        font-size: 1rem;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 575px) {
+
+    .qr-project-cta {
+        min-height: auto;
+
+        padding: 60px 0;
+    }
+
+    .qr-project-cta-bg img {
+        object-position: 60% center;
+    }
+
+    .qr-project-cta-overlay {
+        background:
+            linear-gradient(90deg,
+                rgba(5, 20, 39, 0.95),
+                rgba(8, 27, 50, 0.85));
+    }
+
+    .qr-project-cta-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .qr-project-cta-title {
+        max-width: 100%;
+
+        font-size: 2.25rem;
+        line-height: 1.1;
+
+        margin-bottom: 20px;
+    }
+
+    .qr-project-cta-text {
+        max-width: 100%;
+
+        font-size: 0.95rem;
+        line-height: 1.7;
+
+        margin-bottom: 26px;
+    }
+
+    .qr-project-cta-button {
+        padding: 14px 20px;
+
+        font-size: 0.95rem;
+    }
+
+}
+
+
+
+/* =========================================================
+   QUANTUM RESOURCES
+   INDUSTRIES GRID
+   Completely independent component
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   SECTION
+   --------------------------------------------------------- */
+
+.qr-industries-section {
+    width: 100%;
+    padding: 90px 0;
+
+    background: #ffffff;
+}
+
+
+/* ---------------------------------------------------------
+   CONTAINER
+   --------------------------------------------------------- */
+
+.qr-industries-container {
+    width: 100%;
+    max-width: 1140px;
+
+    margin: 0 auto;
+
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+/* ---------------------------------------------------------
+   GRID
+   --------------------------------------------------------- */
+
+.qr-industries-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    gap: 14px;
+}
+
+
+/* ---------------------------------------------------------
+   CARD
+   --------------------------------------------------------- */
+
+.qr-industry-card {
+    position: relative;
+
+    width: 100%;
+    height: 330px;
+
+    overflow: hidden;
+
+    border-radius: 10px;
+
+    background: #081a31;
+
+    isolation: isolate;
+
+    cursor: pointer;
+}
+
+
+/* ---------------------------------------------------------
+   IMAGE
+   --------------------------------------------------------- */
+
+.qr-industry-card>img {
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+    object-position: center;
+
+    transition:
+        transform 0.8s cubic-bezier(.2, .7, .2, 1);
+}
+
+
+/* ---------------------------------------------------------
+   OVERLAY
+   --------------------------------------------------------- */
+
+.qr-industry-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    z-index: 1;
+
+    background:
+        linear-gradient(to top,
+            rgba(4, 17, 34, 0.97) 0%,
+            rgba(5, 20, 39, 0.78) 28%,
+            rgba(5, 20, 39, 0.22) 65%,
+            rgba(5, 20, 39, 0.04) 100%);
+
+    transition:
+        background 0.4s ease;
+}
+
+
+/* ---------------------------------------------------------
+   CONTENT
+   --------------------------------------------------------- */
+
+.qr-industry-content {
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    z-index: 2;
+
+    padding: 26px 24px 23px;
+
+    color: #ffffff;
+}
+
+
+/* ---------------------------------------------------------
+   TITLE
+   --------------------------------------------------------- */
+
+.qr-industry-title {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 8px;
+}
+
+
+.qr-industry-title i {
+    flex-shrink: 0;
+
+    color: #c53232;
+
+    font-size: 1.35rem;
+
+    line-height: 1;
+}
+
+
+.qr-industry-title span {
+    color: #ffffff;
+
+    font-size: 1.15rem;
+    font-weight: 700;
+
+    line-height: 1.25;
+}
+
+
+/* ---------------------------------------------------------
+   DESCRIPTION
+   --------------------------------------------------------- */
+
+.qr-industry-content small {
+    display: block;
+
+    max-width: 400px;
+
+    color: rgba(255, 255, 255, 0.78);
+
+    font-size: 0.88rem;
+    font-weight: 400;
+
+    line-height: 1.55;
+}
+
+
+/* ---------------------------------------------------------
+   HOVER IMAGE
+   --------------------------------------------------------- */
+
+.qr-industry-card:hover>img {
+    transform: scale(1.06);
+}
+
+
+/* ---------------------------------------------------------
+   HOVER OVERLAY
+   --------------------------------------------------------- */
+
+.qr-industry-card:hover .qr-industry-overlay {
+    background:
+        linear-gradient(to top,
+            rgba(4, 17, 34, 0.98) 0%,
+            rgba(5, 20, 39, 0.72) 35%,
+            rgba(5, 20, 39, 0.16) 70%,
+            rgba(5, 20, 39, 0.02) 100%);
+}
+
+
+/* ---------------------------------------------------------
+   HOVER CARD
+   --------------------------------------------------------- */
+
+.qr-industry-card {
+    transition:
+        box-shadow 0.35s ease,
+        transform 0.35s ease;
+}
+
+
+.qr-industry-card:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 16px 35px rgba(5, 20, 39, 0.18);
+}
+
+
+/* ---------------------------------------------------------
+   TABLET
+   --------------------------------------------------------- */
+
+@media (max-width: 991px) {
+
+    .qr-industries-section {
+        padding: 70px 0;
+    }
+
+    .qr-industries-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+        gap: 14px;
+    }
+
+    .qr-industry-card {
+        height: 310px;
+    }
+
+}
+
+
+/* ---------------------------------------------------------
+   MOBILE
+   --------------------------------------------------------- */
+
+@media (max-width: 575px) {
+
+    .qr-industries-section {
+        padding: 55px 0;
+    }
+
+    .qr-industries-container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .qr-industries-grid {
+        grid-template-columns: 1fr;
+
+        gap: 14px;
+    }
+
+    .qr-industry-card {
+        height: 290px;
+
+        border-radius: 9px;
+    }
+
+    .qr-industry-content {
+        padding: 22px 20px 20px;
+    }
+
+    .qr-industry-title span {
+        font-size: 1.05rem;
+    }
+
+    .qr-industry-content small {
+        font-size: 0.84rem;
+    }
+
+}
+
+/* =========================================================
+   QUANTUM RESOURCES
+   OUR EXPERTISE SECTION
+   Completely independent component
+   ========================================================= */
+
+
+/* =========================================================
+   SECTION
+   ========================================================= */
+
+.qr-expertise-section {
+    position: relative;
+    width: 100%;
+
+    padding: 90px 0;
+
+    background: #081a31;
+    color: #ffffff;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   CONTAINER
+   ========================================================= */
+
+.qr-expertise-container {
+    width: 100%;
+    max-width: 1140px;
+
+    margin: 0 auto;
+
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+/* =========================================================
+   HEADING
+   ========================================================= */
+
+.qr-expertise-heading {
+    margin: 0 0 45px;
+
+    color: #ffffff;
+
+    font-size: 2.8rem;
+    font-weight: 800;
+
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+}
+
+
+/* =========================================================
+   GRID
+   ========================================================= */
+
+.qr-expertise-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    gap: 18px;
+}
+
+
+/* =========================================================
+   CARD
+   ========================================================= */
+
+.qr-expertise-card {
+    position: relative;
+
+    width: 100%;
+    height: 500px;
+
+    overflow: hidden;
+
+    border-radius: 10px;
+
+    background: #0d213d;
+
+    isolation: isolate;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.4s cubic-bezier(.2, .7, .2, 1),
+        box-shadow 0.4s ease;
+}
+
+
+/* =========================================================
+   CARD IMAGE
+   ========================================================= */
+
+.qr-expertise-card>img {
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+    object-position: center;
+
+    transform: scale(1);
+
+    transition:
+        transform 0.8s cubic-bezier(.2, .7, .2, 1);
+}
+
+
+/* =========================================================
+   IMAGE OVERLAY
+   ========================================================= */
+
+.qr-expertise-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    z-index: 1;
+
+    background:
+        linear-gradient(to top,
+            rgba(4, 16, 32, 0.98) 0%,
+            rgba(5, 20, 39, 0.76) 34%,
+            rgba(5, 20, 39, 0.24) 70%,
+            rgba(5, 20, 39, 0.04) 100%);
+
+    transition:
+        background 0.5s ease;
+}
+
+
+/* =========================================================
+   CARD CONTENT
+   Anchored to bottom
+   ========================================================= */
+
+.qr-expertise-content {
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    z-index: 2;
+
+    padding: 32px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+
+/* =========================================================
+   NUMBER
+   ========================================================= */
+
+.qr-expertise-number {
+    margin: 0 0 12px;
+
+    color: #c53232;
+
+    font-size: 0.9rem;
+    font-weight: 800;
+
+    line-height: 1;
+
+    letter-spacing: 0.12em;
+
+    transition:
+        transform 0.45s ease;
+}
+
+
+/* =========================================================
+   TITLE
+   ========================================================= */
+
+.qr-expertise-content h3 {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: 1.55rem;
+    font-weight: 750;
+
+    line-height: 1.2;
+
+    transition:
+        transform 0.45s ease;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+   Hidden by default
+   ========================================================= */
+
+.qr-expertise-content p {
+    max-width: 390px;
+
+    margin: 14px 0 0;
+
+    color: rgba(255, 255, 255, 0.82);
+
+    font-size: 0.92rem;
+    font-weight: 400;
+
+    line-height: 1.65;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transform: translateY(20px);
+
+    transition:
+        opacity 0.35s ease,
+        visibility 0.35s ease,
+        transform 0.45s cubic-bezier(.2, .7, .2, 1);
+}
+
+
+/* =========================================================
+   ARROW
+   Hidden by default
+   ========================================================= */
+
+.qr-expertise-arrow {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 40px;
+    height: 40px;
+
+    margin-top: 20px;
+
+    border: 1px solid rgba(255, 255, 255, 0.35);
+
+    border-radius: 50%;
+
+    color: #ffffff;
+
+    font-size: 1rem;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transform: translateY(20px);
+
+    transition:
+        opacity 0.35s ease,
+        visibility 0.35s ease,
+        transform 0.45s ease,
+        background-color 0.3s ease,
+        border-color 0.3s ease;
+}
+
+
+/* =========================================================
+   CARD HOVER
+   ========================================================= */
+
+.qr-expertise-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 22px 45px rgba(0, 0, 0, 0.30);
+}
+
+
+/* =========================================================
+   IMAGE ZOOM
+   ========================================================= */
+
+.qr-expertise-card:hover>img {
+    transform: scale(1.07);
+}
+
+
+/* =========================================================
+   STRONGER OVERLAY ON HOVER
+   ========================================================= */
+
+.qr-expertise-card:hover .qr-expertise-overlay {
+    background:
+        linear-gradient(to top,
+            rgba(3, 14, 29, 0.99) 0%,
+            rgba(5, 20, 39, 0.88) 40%,
+            rgba(5, 20, 39, 0.38) 72%,
+            rgba(5, 20, 39, 0.10) 100%);
+}
+
+
+/* =========================================================
+   SHOW DESCRIPTION ON HOVER
+   ========================================================= */
+
+.qr-expertise-card:hover .qr-expertise-content p {
+    opacity: 1;
+    visibility: visible;
+
+    transform: translateY(0);
+}
+
+
+/* =========================================================
+   SHOW ARROW ON HOVER
+   ========================================================= */
+
+.qr-expertise-card:hover .qr-expertise-arrow {
+    opacity: 1;
+    visibility: visible;
+
+    transform: translateY(0);
+}
+
+
+/* =========================================================
+   SMALL MOVEMENT ON HOVER
+   ========================================================= */
+
+.qr-expertise-card:hover .qr-expertise-number {
+    transform: translateY(-2px);
+}
+
+.qr-expertise-card:hover .qr-expertise-content h3 {
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   ARROW HOVER
+   ========================================================= */
+
+.qr-expertise-card:hover .qr-expertise-arrow:hover {
+    background: #c53232;
+
+    border-color: #c53232;
+
+    color: #ffffff;
+
+    transform: translateX(4px);
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 991px) {
+
+    .qr-expertise-section {
+        padding: 70px 0;
+    }
+
+
+    .qr-expertise-container {
+        max-width: 960px;
+
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+
+    .qr-expertise-heading {
+        font-size: 2.5rem;
+
+        margin-bottom: 35px;
+    }
+
+
+    .qr-expertise-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+        gap: 16px;
+    }
+
+
+    .qr-expertise-card {
+        height: 450px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 575px) {
+
+    .qr-expertise-section {
+        padding: 55px 0;
+    }
+
+
+    .qr-expertise-container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+
+    .qr-expertise-heading {
+        font-size: 2.2rem;
+
+        margin-bottom: 28px;
+    }
+
+
+    .qr-expertise-grid {
+        grid-template-columns: 1fr;
+
+        gap: 14px;
+    }
+
+
+    .qr-expertise-card {
+        height: 390px;
+
+        border-radius: 9px;
+    }
+
+
+    .qr-expertise-content {
+        padding: 24px;
+    }
+
+
+    .qr-expertise-content h3 {
+        font-size: 1.35rem;
+    }
+
+
+    .qr-expertise-content p {
+        font-size: 0.88rem;
+    }
+
+
+    /* ---------------------------------------------
+       Mobile has no reliable hover.
+       Show information by default.
+       --------------------------------------------- */
+
+    .qr-expertise-content p {
+        opacity: 1;
+        visibility: visible;
+
+        transform: none;
+    }
+
+
+    .qr-expertise-arrow {
+        opacity: 1;
+        visibility: visible;
+
+        transform: none;
+    }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .qr-expertise-card,
+    .qr-expertise-card>img,
+    .qr-expertise-overlay,
+    .qr-expertise-content p,
+    .qr-expertise-arrow,
+    .qr-expertise-number,
+    .qr-expertise-content h3 {
+        transition: none;
+    }
+
+}
+
+
+
+/* =========================================================
+   QUANTUM RESOURCES
+   SERVICE SECTIONS - IMAGE VISIBILITY FIX
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   SERVICE IMAGE CONTAINER
+   Prevent global .media animation from hiding images
+   --------------------------------------------------------- */
+
+.svc .media {
+    position: relative;
+
+    width: 100%;
+
+    min-height: 420px;
+
+    overflow: hidden;
+
+    clip-path: inset(0) !important;
+
+    opacity: 1 !important;
+
+    visibility: visible !important;
+
+    transform: none !important;
+
+    background: #0d213d;
+}
+
+
+/* ---------------------------------------------------------
+   SERVICE IMAGE
+   --------------------------------------------------------- */
+
+.svc .media img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    min-height: 420px;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    opacity: 1 !important;
+
+    visibility: visible !important;
+
+    transform: scale(1) !important;
+
+    transition:
+        transform 0.8s cubic-bezier(.2, .7, .2, 1);
+}
+
+
+/* ---------------------------------------------------------
+   IMAGE HOVER
+   --------------------------------------------------------- */
+
+.svc .media:hover img {
+    transform: scale(1.04) !important;
+}
+
+
+/* =========================================================
+   DESKTOP
+   ========================================================= */
+
+@media (min-width: 992px) {
+
+    .svc .media {
+        min-height: 460px;
+    }
+
+    .svc .media img {
+        min-height: 460px;
+    }
+
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 991px) {
+
+    .svc .media {
+        min-height: 400px;
+    }
+
+    .svc .media img {
+        min-height: 400px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 575px) {
+
+    .svc .media {
+        min-height: 300px;
+
+        border-radius: 8px;
+    }
+
+    .svc .media img {
+        min-height: 300px;
+    }
+
+}
+
+
+/* =========================================================
+   QUANTUM RESOURCES
+   ALSO COVERED IMAGE
+   IMAGE VISIBILITY FIX
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   IMAGE CONTAINER
+   --------------------------------------------------------- */
+
+.qr-also-image {
+    position: relative;
+
+    width: 100%;
+
+    height: 500px;
+
+    overflow: hidden;
+
+    background: #0d213d;
+
+    clip-path: inset(0) !important;
+
+    opacity: 1 !important;
+
+    visibility: visible !important;
+
+    transform: none !important;
+}
+
+
+/* ---------------------------------------------------------
+   IMAGE
+   --------------------------------------------------------- */
+
+.qr-also-image img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    opacity: 1 !important;
+
+    visibility: visible !important;
+
+    transform: scale(1) !important;
+
+    transition:
+        transform 0.9s cubic-bezier(.2, .7, .2, 1);
+}
+
+
+/* ---------------------------------------------------------
+   HOVER ZOOM
+   --------------------------------------------------------- */
+
+.qr-also-image:hover img {
+    transform: scale(1.04) !important;
+}
+
+
+/* =========================================================
+   DESKTOP
+   ========================================================= */
+
+@media (min-width: 992px) {
+
+    .qr-also-image {
+        height: 520px;
+    }
+
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 991px) {
+
+    .qr-also-image {
+        height: 420px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 575px) {
+
+    .qr-also-image {
+        height: 300px;
+
+        border-radius: 8px;
+    }
+
+}
+
+
+/* =========================================================
+   QUANTUM RESOURCES
+   COPPER ANODE & CATHODE PLANTS
+   IMAGE VISIBILITY FIX
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   IMAGE CONTAINER
+   --------------------------------------------------------- */
+
+.qr-copper-plants .qr-copper-image {
+    position: relative;
+
+    width: 100%;
+
+    height: 520px;
+
+    overflow: hidden;
+
+    background: #0d213d;
+
+    /*
+       Override global .media animation.
+       Image stays visible after page load.
+    */
+
+    clip-path: inset(0) !important;
+
+    opacity: 1 !important;
+
+    visibility: visible !important;
+
+    transform: none !important;
+}
+
+
+/* ---------------------------------------------------------
+   IMAGE
+   --------------------------------------------------------- */
+
+.qr-copper-plants .qr-copper-image img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    opacity: 1 !important;
+
+    visibility: visible !important;
+
+    transform: scale(1) !important;
+
+    transition:
+        transform 0.9s cubic-bezier(.2, .7, .2, 1);
+}
+
+
+/* ---------------------------------------------------------
+   IMAGE HOVER
+   --------------------------------------------------------- */
+
+.qr-copper-plants .qr-copper-image:hover img {
+    transform: scale(1.04) !important;
+}
+
+
+/* ---------------------------------------------------------
+   SLIGHT IMAGE FRAME
+   --------------------------------------------------------- */
+
+.qr-copper-plants .qr-copper-image {
+    border-radius: 6px;
+
+    box-shadow:
+        0 20px 50px rgba(8, 26, 49, 0.14);
+}
+
+
+/* =========================================================
+   DESKTOP
+   ========================================================= */
+
+@media (min-width: 992px) {
+
+    .qr-copper-plants .qr-copper-image {
+        height: 520px;
+    }
+
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 991px) {
+
+    .qr-copper-plants .qr-copper-image {
+        height: 440px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 575px) {
+
+    .qr-copper-plants .qr-copper-image {
+        height: 320px;
+
+        border-radius: 6px;
+    }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .qr-copper-plants .qr-copper-image img {
+        transition: none;
+
+        transform: none !important;
+    }
+
+}
+
+
+/* =========================================================
+   QUANTUM RESOURCES
+   OWNER'S INTEREST FIRST
+   IMAGE VISIBILITY FIX
+   ========================================================= */
+
+
+/* =========================================================
+   SECTION
+   ========================================================= */
+
+.qr-owner-section {
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   IMAGE WRAPPER
+   ========================================================= */
+
+.qr-owner-image {
+
+    position: relative;
+
+    width: 100%;
+
+    height: 500px;
+
+    overflow: hidden;
+
+    background: #0d213d;
+
+    border-radius: 8px;
+
+    box-shadow:
+        0 22px 50px rgba(0, 0, 0, 0.22);
+
+    /*
+       IMPORTANT:
+       Override the global .media animation.
+    */
+
+    clip-path: inset(0) !important;
+
+    opacity: 1 !important;
+
+    visibility: visible !important;
+
+    transform: none !important;
+}
+
+
+/* =========================================================
+   IMAGE
+   ========================================================= */
+
+.qr-owner-image img {
+
+    display: block;
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    opacity: 1 !important;
+
+    visibility: visible !important;
+
+    transform: scale(1);
+
+    transition:
+        transform 0.9s cubic-bezier(.2, .7, .2, 1);
+}
+
+
+/* =========================================================
+   IMAGE HOVER
+   ========================================================= */
+
+.qr-owner-image:hover img {
+
+    transform: scale(1.05);
+}
+
+
+/* =========================================================
+   IMAGE OVERLAY
+   ========================================================= */
+
+.qr-owner-image::after {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    pointer-events: none;
+
+    background:
+        linear-gradient(135deg,
+            rgba(8, 26, 49, 0.08),
+            rgba(8, 26, 49, 0.35));
+}
+
+
+/* =========================================================
+   DESKTOP
+   ========================================================= */
+
+@media (min-width: 992px) {
+
+    .qr-owner-image {
+        height: 520px;
+    }
+
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 991px) {
+
+    .qr-owner-image {
+        height: 440px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 575px) {
+
+    .qr-owner-image {
+
+        height: 320px;
+
+        border-radius: 6px;
+    }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .qr-owner-image img {
+
+        transition: none;
+
+        transform: none !important;
+    }
+
+}

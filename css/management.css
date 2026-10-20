@@ -1,0 +1,46 @@
+.person {
+    transition: transform .35s
+}
+
+.person:hover {
+    transform: translateY(-4px)
+}
+
+.person {
+    position: relative;
+    padding: 1.8rem 1.4rem;
+    background: var(--off);
+    border-top: 3px solid transparent;
+    overflow: hidden;
+    transition: border-color .4s, transform .4s, box-shadow .4s
+}
+
+.person:before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(135deg, rgba(184, 122, 75, .1) 0 2px, transparent 2px 14px);
+    opacity: 0;
+    transition: opacity .5s
+}
+
+.person>* {
+    position: relative
+}
+
+.person:hover {
+    border-color: var(--cu);
+    box-shadow: 0 12px 30px rgba(11, 27, 51, .12)
+}
+
+.person:hover:before {
+    opacity: 1
+}
+
+.ini {
+    transition: transform .4s cubic-bezier(.2, .7, .2, 1)
+}
+
+.person:hover .ini {
+    transform: scale(1.08)
+}

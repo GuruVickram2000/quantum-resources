@@ -1,0 +1,637 @@
+/* =========================================================
+   QUANTUM RESOURCES
+   SEA / AIR / LAND
+   TRANSPORT CARDS
+   ========================================================= */
+
+
+/* =========================================================
+   SECTION
+   ========================================================= */
+
+.qr-transport-section {
+    position: relative;
+
+    width: 100%;
+
+    padding: 110px 0;
+
+    background: #ffffff;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   CONTAINER
+   ========================================================= */
+
+.qr-transport-container {
+    width: 100%;
+
+    max-width: 1140px;
+
+    margin: 0 auto;
+
+    padding: 0 15px;
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.qr-transport-header {
+    max-width: 720px;
+
+    margin: 0 auto 55px;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   EYEBROW
+   ========================================================= */
+
+.qr-transport-eyebrow {
+    display: inline-block;
+
+    margin-bottom: 14px;
+
+    color: #c53232;
+
+    font-size: 0.75rem;
+
+    font-weight: 800;
+
+    letter-spacing: 0.17em;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   HEADING
+   ========================================================= */
+
+.qr-transport-header h2 {
+    margin: 0;
+
+    color: #081a31;
+
+    font-size: 3.2rem;
+
+    font-weight: 800;
+
+    line-height: 1.05;
+
+    letter-spacing: -0.04em;
+}
+
+
+/* =========================================================
+   HEADER DESCRIPTION
+   ========================================================= */
+
+.qr-transport-header p {
+    max-width: 620px;
+
+    margin: 18px auto 0;
+
+    color: #667384;
+
+    font-size: 1rem;
+
+    line-height: 1.75;
+}
+
+
+/* =========================================================
+   GRID
+   ========================================================= */
+
+.qr-transport-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 22px;
+}
+
+
+/* =========================================================
+   CARD
+   ========================================================= */
+
+.qr-transport-card {
+    position: relative;
+
+    height: 530px;
+
+    overflow: hidden;
+
+    border-radius: 12px;
+
+    background: #081a31;
+
+    isolation: isolate;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 12px 35px rgba(8, 26, 49, 0.10);
+
+    transition:
+        transform 0.45s cubic-bezier(.2, .7, .2, 1),
+        box-shadow 0.45s ease;
+}
+
+
+/* =========================================================
+   CARD HOVER
+   ========================================================= */
+
+.qr-transport-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 25px 55px rgba(8, 26, 49, 0.18);
+}
+
+
+/* =========================================================
+   IMAGE
+   ========================================================= */
+
+.qr-transport-image {
+    position: absolute;
+
+    inset: 0;
+
+    overflow: hidden;
+
+    z-index: 0;
+}
+
+
+.qr-transport-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    transform: scale(1);
+
+    transition:
+        transform 0.9s cubic-bezier(.2, .7, .2, 1);
+}
+
+
+/* =========================================================
+   IMAGE ZOOM
+   ========================================================= */
+
+.qr-transport-card:hover .qr-transport-image img {
+    transform: scale(1.07);
+}
+
+
+/* =========================================================
+   OVERLAY
+   ========================================================= */
+
+.qr-transport-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    z-index: 1;
+
+    background:
+        linear-gradient(to bottom,
+            rgba(8, 26, 49, 0.03) 0%,
+            rgba(8, 26, 49, 0.08) 28%,
+            rgba(8, 26, 49, 0.55) 50%,
+            rgba(8, 26, 49, 0.97) 78%,
+            rgba(5, 17, 34, 1) 100%);
+
+    transition:
+        background 0.5s ease;
+}
+
+
+/* =========================================================
+   HOVER OVERLAY
+   ========================================================= */
+
+.qr-transport-card:hover .qr-transport-overlay {
+    background:
+        linear-gradient(to bottom,
+            rgba(8, 26, 49, 0.08) 0%,
+            rgba(8, 26, 49, 0.18) 28%,
+            rgba(8, 26, 49, 0.68) 52%,
+            rgba(8, 26, 49, 0.98) 76%,
+            rgba(5, 17, 34, 1) 100%);
+}
+
+
+/* =========================================================
+   CONTENT
+   ========================================================= */
+
+.qr-transport-content {
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    z-index: 2;
+
+    padding: 30px;
+}
+
+
+/* =========================================================
+   ICON
+   ========================================================= */
+
+.qr-transport-icon {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 52px;
+    height: 52px;
+
+    margin-bottom: 18px;
+
+    border: 1px solid #c53232;
+
+    border-radius: 50%;
+
+    background: rgba(8, 26, 49, 0.82);
+
+    color: #ffffff;
+
+    font-size: 1.2rem;
+
+    backdrop-filter: blur(5px);
+
+    transition:
+        background 0.35s ease,
+        transform 0.4s ease;
+}
+
+
+/* =========================================================
+   ICON HOVER
+   ========================================================= */
+
+.qr-transport-card:hover .qr-transport-icon {
+    background: #c53232;
+
+    transform: translateY(-4px);
+}
+
+
+/* =========================================================
+   NUMBER
+   ========================================================= */
+
+.qr-transport-number {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #e43a3a;
+
+    font-size: 0.75rem;
+
+    font-weight: 800;
+
+    letter-spacing: 0.14em;
+}
+
+
+/* =========================================================
+   TITLE
+   ========================================================= */
+
+.qr-transport-content h3 {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: 2rem;
+
+    font-weight: 800;
+
+    line-height: 1.1;
+
+    transition:
+        transform 0.4s ease;
+}
+
+
+/* =========================================================
+   LABEL
+   ========================================================= */
+
+.qr-transport-label {
+    display: block;
+
+    margin-top: 9px;
+
+    color: #e43a3a;
+
+    font-size: 0.72rem;
+
+    font-weight: 800;
+
+    letter-spacing: 0.15em;
+}
+
+
+/* =========================================================
+   RED LINE
+   ========================================================= */
+
+.qr-transport-line {
+    width: 42px;
+
+    height: 2px;
+
+    margin: 16px 0;
+
+    background: #c53232;
+
+    transition:
+        width 0.45s cubic-bezier(.2, .7, .2, 1);
+}
+
+
+/* =========================================================
+   LINE HOVER
+   ========================================================= */
+
+.qr-transport-card:hover .qr-transport-line {
+    width: 75px;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+   ========================================================= */
+
+.qr-transport-content p {
+    max-width: 390px;
+
+    margin: 0;
+
+    color: rgba(255, 255, 255, 0.78);
+
+    font-size: 0.92rem;
+
+    line-height: 1.65;
+
+    opacity: 0;
+
+    transform: translateY(15px);
+
+    transition:
+        opacity 0.4s ease,
+        transform 0.45s cubic-bezier(.2, .7, .2, 1);
+}
+
+
+/* =========================================================
+   SHOW DESCRIPTION
+   ========================================================= */
+
+.qr-transport-card:hover .qr-transport-content p {
+    opacity: 1;
+
+    transform: translateY(0);
+}
+
+
+/* =========================================================
+   ARROW
+   ========================================================= */
+
+.qr-transport-arrow {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 42px;
+    height: 42px;
+
+    margin-top: 20px;
+
+    border: 1px solid rgba(255, 255, 255, 0.38);
+
+    border-radius: 50%;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    opacity: 0;
+
+    transform: translateY(15px);
+
+    transition:
+        opacity 0.4s ease,
+        transform 0.4s ease,
+        background 0.3s ease,
+        border-color 0.3s ease;
+}
+
+
+/* =========================================================
+   SHOW ARROW
+   ========================================================= */
+
+.qr-transport-card:hover .qr-transport-arrow {
+    opacity: 1;
+
+    transform: translateY(0);
+}
+
+
+/* =========================================================
+   ARROW HOVER
+   ========================================================= */
+
+.qr-transport-arrow:hover {
+    background: #c53232;
+
+    border-color: #c53232;
+
+    color: #ffffff;
+
+    transform: translateX(4px);
+}
+
+
+/* =========================================================
+   TITLE MOVEMENT
+   ========================================================= */
+
+.qr-transport-card:hover .qr-transport-content h3 {
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 991px) {
+
+    .qr-transport-section {
+        padding: 80px 0;
+    }
+
+
+    .qr-transport-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+
+    .qr-transport-header {
+        margin-bottom: 40px;
+    }
+
+
+    .qr-transport-header h2 {
+        font-size: 2.7rem;
+    }
+
+
+    .qr-transport-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap: 18px;
+    }
+
+
+    .qr-transport-card {
+        height: 480px;
+    }
+
+
+    .qr-transport-content {
+        padding: 26px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 575px) {
+
+    .qr-transport-section {
+        padding: 65px 0;
+    }
+
+
+    .qr-transport-container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+
+    .qr-transport-header {
+        margin-bottom: 32px;
+    }
+
+
+    .qr-transport-header h2 {
+        font-size: 2.35rem;
+    }
+
+
+    .qr-transport-header p {
+        font-size: 0.92rem;
+    }
+
+
+    .qr-transport-grid {
+        grid-template-columns: 1fr;
+
+        gap: 16px;
+    }
+
+
+    .qr-transport-card {
+        height: 450px;
+
+        border-radius: 10px;
+    }
+
+
+    .qr-transport-content {
+        padding: 24px;
+    }
+
+
+    .qr-transport-content h3 {
+        font-size: 1.8rem;
+    }
+
+
+    /* ---------------------------------------------
+       Mobile has no hover.
+       Show content by default.
+       --------------------------------------------- */
+
+    .qr-transport-content p {
+        opacity: 1;
+
+        transform: none;
+    }
+
+
+    .qr-transport-arrow {
+        opacity: 1;
+
+        transform: none;
+    }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .qr-transport-card,
+    .qr-transport-image img,
+    .qr-transport-overlay,
+    .qr-transport-icon,
+    .qr-transport-line,
+    .qr-transport-content h3,
+    .qr-transport-content p,
+    .qr-transport-arrow {
+        transition: none;
+    }
+
+}
