@@ -1,0 +1,172 @@
+.vert {
+    margin-top: 56px;
+
+    /* Curved card edges */
+    border-radius: 14px;
+
+    /* Makes the image follow the curved corners */
+    overflow: hidden;
+}
+
+.vert-txt {
+    padding: 48px;
+    background: var(--navy);
+    color: #fff;
+    height: 100%
+}
+
+.vert.coal-trading .vert-txt {
+    background: var(--graph)
+}
+
+.vert.logistics .vert-txt {
+    background: var(--off);
+    color: var(--ink)
+}
+
+.vert.logistics .btn-line:hover {
+    color: #fff
+}
+
+.vert-txt .btn-line {
+    color: inherit
+}
+
+.vert-txt p {
+    color: inherit;
+    opacity: .9
+}
+
+.num {
+    font-size: 3.4rem;
+    font-weight: 800;
+    color: var(--cu);
+    display: block;
+    line-height: 1
+}
+
+.vert h3 {
+    font-size: 2rem
+}
+
+.why-i {
+    padding: 40px 32px;
+    border: 1px solid #d6dae0;
+    margin: -1px 0 0 -1px;
+    height: 100%;
+    transition: background .35s, color .35s
+}
+
+.why-i:hover {
+    background: var(--navy);
+    color: #fff
+}
+
+.why-i i {
+    font-size: 2rem;
+    color: var(--cu)
+}
+
+.why-i b {
+    float: right;
+    color: #9aa3af
+}
+
+.why-i h3 {
+    font-size: 1.2rem;
+    margin-top: 1rem
+}
+
+.float-wrap {
+    position: relative
+}
+
+.float-card {
+    position: absolute;
+    left: -30px;
+    bottom: -30px;
+    background: var(--cu);
+    color: #fff;
+    padding: 1.4rem 1.8rem;
+    max-width: 260px
+}
+
+.float-card b {
+    display: block;
+    font-size: 1.3rem
+}
+
+.tech-lines {
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(90deg, transparent 0 119px, rgba(184, 122, 75, .18) 119px 120px);
+    animation: gridmove 40s linear infinite
+}
+
+.tech-feature {
+    position: relative;
+    overflow: hidden
+}
+
+.tech-feature .container {
+    position: relative
+}
+
+.subnav {
+    position: sticky;
+    top: 60px;
+    z-index: 1000;
+    background: #fff;
+    border-bottom: 1px solid #d6dae0
+}
+
+.subnav .container {
+    display: flex;
+    gap: 2rem;
+    overflow-x: auto
+}
+
+.subnav a {
+    padding: 1rem 0;
+    font-weight: 700;
+    text-decoration: none;
+    white-space: nowrap;
+    border-bottom: 3px solid transparent;
+    transition: border-color .3s
+}
+
+.subnav a:hover,
+.subnav a:focus-visible {
+    border-color: var(--cu)
+}
+
+.svc {
+    padding: 96px 0;
+    scroll-margin-top: 110px
+}
+
+.svc-d {
+    background: var(--navy);
+    color: #fff
+}
+
+.svc-d p {
+    color: #cfd6e2
+}
+
+.svc-d .btn-line:hover {
+    background: #fff;
+    color: var(--navy)
+}
+
+.svc .btn-line:hover {
+    color: #fff
+}
+
+.svc .num {
+    font-size: 4.5rem;
+    font-weight: 800;
+    color: var(--cu);
+    line-height: 1;
+    display: block
+}

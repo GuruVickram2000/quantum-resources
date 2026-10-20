@@ -1,0 +1,138 @@
+.split {
+    margin-top: 0
+}
+
+.split-t {
+    padding: 56px
+}
+
+.split-t i {
+    font-size: 2.4rem;
+    color: var(--cu)
+}
+
+.split-t h3 {
+    font-size: 2rem;
+    margin-top: .8rem
+}
+
+@media(max-width:991px) {
+    .split-t {
+        padding: 32px 0
+    }
+}
+
+.modes {
+    grid-template-columns: repeat(3, 1fr)
+}
+
+.modes .ind {
+    aspect-ratio: 3/4
+}
+
+.modes .ind small {
+    opacity: 1
+}
+
+.modes .ind i {
+    font-size: 1.6rem;
+    display: block;
+    margin-bottom: .4rem;
+    transition: transform .5s
+}
+
+.modes .ind:hover i {
+    transform: translateX(10px)
+}
+
+.route {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: 3rem;
+    text-align: center
+}
+
+.rn {
+    position: relative;
+    z-index: 2
+}
+
+.rn i {
+    display: grid;
+    place-items: center;
+    width: 64px;
+    height: 64px;
+    margin: 0 auto .8rem;
+    background: var(--cu);
+    border-radius: 50%;
+    font-size: 1.4rem
+}
+
+.rn span {
+    font-weight: 700
+}
+
+.route-line {
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    top: 31px;
+    height: 2px;
+    background: rgba(255, 255, 255, .25);
+    z-index: 1
+}
+
+.route-line i {
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #fff;
+    animation: travel 4s linear infinite
+}
+
+.route-line i:nth-child(2) {
+    animation-delay: 1.3s
+}
+
+.route-line i:nth-child(3) {
+    animation-delay: 2.6s
+}
+
+@media(max-width:767px) {
+    .modes {
+        grid-template-columns: 1fr
+    }
+
+    .route {
+        grid-template-columns: 1fr;
+        gap: 1.6rem;
+        text-align: left
+    }
+
+    .rn {
+        display: flex;
+        align-items: center;
+        gap: 1rem
+    }
+
+    .rn i {
+        margin: 0
+    }
+
+    .route-line {
+        left: 31px;
+        right: auto;
+        top: 30px;
+        bottom: 30px;
+        width: 2px;
+        height: auto
+    }
+
+    .route-line i {
+        display: none
+    }
+}

@@ -1,0 +1,56 @@
+# Image inventory. All files below exist as PROCEDURAL PLACEHOLDER artwork (not photographs).
+# Replace each with real licensed photography using the same filename. Sizes: hero 1920x1080, all others 1200x800.
+[✓] COMPLETE (placeholder art)  about/industrial-team.jpg  1200x800
+[✓] COMPLETE (placeholder art)  about/quantum-about.jpg  1200x800
+[✓] COMPLETE (placeholder art)  about/supply-chain.jpg  1200x800
+[✓] COMPLETE (placeholder art)  coal-trading/coal-conveyor.jpg  1200x800
+[✓] COMPLETE (placeholder art)  coal-trading/coal-handling.jpg  1200x800
+[✓] COMPLETE (placeholder art)  coal-trading/coal-port.jpg  1200x800
+[✓] COMPLETE (placeholder art)  coal-trading/coal-transport.jpg  1200x800
+[✓] COMPLETE (placeholder art)  coal-trading/power-coal.jpg  1200x800
+[✓] COMPLETE (placeholder art)  coal-trading/thermal-coal.jpg  1200x800
+[✓] COMPLETE (placeholder art)  copper/copper-furnace.jpg  1200x800
+[✓] COMPLETE (placeholder art)  copper/copper-rod-production.jpg  1200x800
+[✓] COMPLETE (placeholder art)  copper/copper-rod.jpg  1200x800
+[✓] COMPLETE (placeholder art)  copper/tankhouse.jpg  1200x800
+[✓] COMPLETE (placeholder art)  hero/coal-trading-service.jpg  1920x1080
+[✓] COMPLETE (placeholder art)  hero/logistics-service.jpg  1920x1080
+[✓] COMPLETE (placeholder art)  hero/quantum-industrial-port.jpg  1920x1080
+[✓] COMPLETE (placeholder art)  hero/technical-consultancy-service.jpg  1920x1080
+[✓] COMPLETE (placeholder art)  industries/cement-plant.jpg  1200x800
+[✓] COMPLETE (placeholder art)  industries/cement.jpg  1200x800
+[✓] COMPLETE (placeholder art)  industries/chemical-industry.jpg  1200x800
+[✓] COMPLETE (placeholder art)  industries/chemicals.jpg  1200x800
+[✓] COMPLETE (placeholder art)  industries/epc-infrastructure.jpg  1200x800
+[✓] COMPLETE (placeholder art)  industries/industrial-manufacturing.jpg  1200x800
+[✓] COMPLETE (placeholder art)  industries/manufacturing.jpg  1200x800
+[✓] COMPLETE (placeholder art)  industries/mining-metals.jpg  1200x800
+[✓] COMPLETE (placeholder art)  industries/paper-industry.jpg  1200x800
+[✓] COMPLETE (placeholder art)  industries/paper.jpg  1200x800
+[✓] COMPLETE (placeholder art)  industries/power-plant.jpg  1200x800
+[✓] COMPLETE (placeholder art)  industries/power.jpg  1200x800
+[✓] COMPLETE (placeholder art)  industries/steel-plant.jpg  1200x800
+[✓] COMPLETE (placeholder art)  industries/steel.jpg  1200x800
+[✓] COMPLETE (placeholder art)  industries/textile-industry.jpg  1200x800
+[✓] COMPLETE (placeholder art)  industries/textile.jpg  1200x800
+[✓] COMPLETE (placeholder art)  logistics/air-freight.jpg  1200x800
+[✓] COMPLETE (placeholder art)  logistics/container-port.jpg  1200x800
+[✓] COMPLETE (placeholder art)  logistics/customs-clearance.jpg  1200x800
+[✓] COMPLETE (placeholder art)  logistics/land-transport.jpg  1200x800
+[✓] COMPLETE (placeholder art)  logistics/sea-freight.jpg  1200x800
+[✓] COMPLETE (placeholder art)  logistics/warehouse.jpg  1200x800
+[✓] COMPLETE (placeholder art)  technical-consultancy/copper-anode.jpg  1200x800
+[✓] COMPLETE (placeholder art)  technical-consultancy/copper-smelting.jpg  1200x800
+[✓] COMPLETE (placeholder art)  technical-consultancy/electrorefining.jpg  1200x800
+[✓] COMPLETE (placeholder art)  technical-consultancy/engineering-plant.jpg  1200x800
+
+# PAGE HERO IMAGES (1920x1080, 16:9, replace with same filename)
+about.html -> assets/images/about/industrial-team.jpg
+services.html -> assets/images/hero/quantum-industrial-port.jpg
+logistics.html -> assets/images/logistics/container-port.jpg
+technical-consultancy.html -> assets/images/technical-consultancy/copper-smelting.jpg
+coal-trading.html -> assets/images/coal-trading/coal-port.jpg
+industries.html -> assets/images/industries/power-plant.jpg
+management.html -> assets/images/about/industrial-team.jpg
+contact.html -> assets/images/hero/quantum-industrial-port.jpg
+index.html -> assets/images/hero/quantum-industrial-port.jpg

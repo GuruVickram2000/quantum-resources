@@ -1,0 +1,41 @@
+@media(max-width:991px) {
+    .sec {
+        padding: 64px 0
+    }
+
+    .ind-grid {
+        grid-template-columns: repeat(2, 1fr)
+    }
+
+    .vert-txt,
+    .two-col .pane {
+        padding: 32px
+    }
+
+    .float-card {
+        left: 12px;
+        bottom: -24px
+    }
+}
+
+@media(max-width:575px) {
+    .ind-grid {
+        grid-template-columns: 1fr
+    }
+
+    .hero {
+        padding: 120px 0 56px
+    }
+
+    .hero-big {
+        min-height: 92vh
+    }
+
+    .btn {
+        width: 100%
+    }
+
+    .steps li {
+        font-size: 1rem
+    }
+}

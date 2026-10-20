@@ -1,0 +1,695 @@
+/* =========================================================
+   QUANTUM RESOURCES
+   COPPER ROD MANUFACTURING
+   TECHNICAL PROCESS SECTION
+   ========================================================= */
+
+
+/* =========================================================
+   SECTION
+   ========================================================= */
+
+.qr-copper-rod {
+    position: relative;
+
+    width: 100%;
+
+    padding: 110px 0;
+
+    background: #f7f7f5;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   MAIN LAYOUT
+   ========================================================= */
+
+.qr-copper-rod-layout {
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 0.92fr)
+        minmax(0, 1.08fr);
+
+    gap: 90px;
+
+    align-items: start;
+}
+
+
+/* =========================================================
+   LEFT SIDE
+   ========================================================= */
+
+.qr-copper-rod-left {
+    position: relative;
+
+    max-width: 560px;
+}
+
+
+/* =========================================================
+   EYEBROW
+   ========================================================= */
+
+.qr-copper-rod-eyebrow {
+
+    display: inline-block;
+
+    margin-bottom: 16px;
+
+    color: #c53232;
+
+    font-size: 0.72rem;
+
+    font-weight: 800;
+
+    letter-spacing: 0.18em;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   HEADING
+   ========================================================= */
+
+.qr-copper-rod-left h2 {
+
+    margin: 0;
+
+    color: #081a31;
+
+    font-size: 3.4rem;
+
+    font-weight: 800;
+
+    line-height: 1.02;
+
+    letter-spacing: -0.04em;
+}
+
+
+.qr-copper-rod-left h2 span {
+
+    display: block;
+
+    color: #c53232;
+}
+
+
+/* =========================================================
+   TAG
+   ========================================================= */
+
+.qr-copper-rod-tag {
+
+    margin: 24px 0 24px;
+
+    color: #c53232;
+
+    font-size: 0.95rem;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   SPECIFICATION
+   ========================================================= */
+
+.qr-copper-rod-spec {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 5px;
+
+    margin-bottom: 24px;
+
+    padding-left: 16px;
+
+    border-left: 3px solid #c53232;
+}
+
+
+.qr-copper-rod-spec strong {
+
+    color: #081a31;
+
+    font-size: 1.55rem;
+
+    font-weight: 800;
+
+    line-height: 1.2;
+}
+
+
+.qr-copper-rod-spec span {
+
+    color: #687586;
+
+    font-size: 0.78rem;
+
+    font-weight: 600;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.1em;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+   ========================================================= */
+
+.qr-copper-rod-description {
+
+    margin: 0 0 14px;
+
+    color: #536070;
+
+    font-size: 0.94rem;
+
+    line-height: 1.75;
+}
+
+
+/* =========================================================
+   IMAGE
+   ========================================================= */
+
+.qr-copper-rod-image {
+
+    position: relative;
+
+    width: 100%;
+
+    height: 330px;
+
+    margin-top: 28px;
+
+    overflow: hidden;
+
+    border-radius: 8px;
+
+    background: #0d213d;
+
+    box-shadow:
+        0 18px 45px rgba(8, 26, 49, 0.14);
+
+    /*
+       Prevent the global .media animation
+       from affecting this image.
+    */
+
+    clip-path: inset(0) !important;
+
+    opacity: 1 !important;
+
+    visibility: visible !important;
+
+    transform: none !important;
+}
+
+
+.qr-copper-rod-image img {
+
+    display: block;
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    transform: scale(1);
+
+    opacity: 1 !important;
+
+    visibility: visible !important;
+
+    transition:
+        transform 0.9s cubic-bezier(.2, .7, .2, 1);
+}
+
+
+.qr-copper-rod-image:hover img {
+
+    transform: scale(1.05);
+}
+
+
+/* =========================================================
+   RIGHT PROCESS AREA
+   ========================================================= */
+
+.qr-copper-process {
+
+    position: relative;
+
+    padding-top: 8px;
+}
+
+
+/* =========================================================
+   PROCESS HEADING
+   ========================================================= */
+
+.qr-process-heading {
+
+    margin-bottom: 38px;
+
+    padding-bottom: 24px;
+
+    border-bottom: 1px solid #d7dce2;
+}
+
+
+.qr-process-heading > span {
+
+    display: block;
+
+    margin-bottom: 10px;
+
+    color: #c53232;
+
+    font-size: 0.7rem;
+
+    font-weight: 800;
+
+    letter-spacing: 0.18em;
+}
+
+
+.qr-process-heading h3 {
+
+    margin: 0;
+
+    color: #081a31;
+
+    font-size: 2rem;
+
+    font-weight: 700;
+
+    line-height: 1.15;
+}
+
+
+.qr-process-heading h3 strong {
+
+    color: #c53232;
+
+    font-weight: 800;
+}
+
+
+/* =========================================================
+   PROCESS ITEM
+   ========================================================= */
+
+.qr-process-item {
+
+    position: relative;
+
+    display: grid;
+
+    grid-template-columns: 64px 1fr;
+
+    gap: 22px;
+
+    min-height: 95px;
+
+    padding-bottom: 24px;
+}
+
+
+/* =========================================================
+   VERTICAL CONNECTING LINE
+   ========================================================= */
+
+.qr-process-item:not(:last-of-type)::after {
+
+    content: "";
+
+    position: absolute;
+
+    top: 50px;
+
+    left: 25px;
+
+    width: 1px;
+
+    height: calc(100% - 32px);
+
+    background:
+        linear-gradient(
+            to bottom,
+            #c53232,
+            #d9dde2
+        );
+}
+
+
+/* =========================================================
+   PROCESS NUMBER
+   ========================================================= */
+
+.qr-process-number {
+
+    position: relative;
+
+    z-index: 2;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 52px;
+
+    height: 52px;
+
+    border: 1px solid #c53232;
+
+    border-radius: 50%;
+
+    background: #081a31;
+
+    color: #ffffff;
+
+    font-size: 0.78rem;
+
+    font-weight: 800;
+
+    transition:
+        background 0.35s ease,
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+
+/* =========================================================
+   PROCESS CONTENT
+   ========================================================= */
+
+.qr-process-content {
+
+    padding-top: 4px;
+}
+
+
+.qr-process-content h4 {
+
+    margin: 0 0 7px;
+
+    color: #081a31;
+
+    font-size: 1.1rem;
+
+    font-weight: 800;
+
+    line-height: 1.25;
+}
+
+
+.qr-process-content p {
+
+    max-width: 500px;
+
+    margin: 0;
+
+    color: #697585;
+
+    font-size: 0.86rem;
+
+    line-height: 1.65;
+}
+
+
+/* =========================================================
+   PROCESS HOVER
+   ========================================================= */
+
+.qr-process-item:hover .qr-process-number {
+
+    background: #c53232;
+
+    transform: scale(1.08);
+
+    box-shadow:
+        0 8px 22px rgba(197, 50, 50, 0.22);
+}
+
+
+.qr-process-item:hover .qr-process-content h4 {
+
+    color: #c53232;
+}
+
+
+/* =========================================================
+   TECHNOLOGY BOX
+   ========================================================= */
+
+.qr-process-tech {
+
+    margin-top: 10px;
+
+    padding: 22px 24px;
+
+    border: 1px solid #d9dee5;
+
+    background: #ffffff;
+
+    border-left: 3px solid #c53232;
+}
+
+
+.qr-process-tech > span {
+
+    display: block;
+
+    margin-bottom: 14px;
+
+    color: #7b8592;
+
+    font-size: 0.68rem;
+
+    font-weight: 800;
+
+    letter-spacing: 0.16em;
+
+    text-transform: uppercase;
+}
+
+
+.qr-process-tech > div {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+}
+
+
+.qr-process-tech b {
+
+    display: inline-flex;
+
+    padding: 8px 12px;
+
+    border: 1px solid #d9dee5;
+
+    color: #081a31;
+
+    background: #f7f8f9;
+
+    font-size: 0.75rem;
+
+    font-weight: 700;
+
+    transition:
+        background 0.3s ease,
+        border-color 0.3s ease,
+        color 0.3s ease;
+}
+
+
+.qr-process-tech b:hover {
+
+    border-color: #c53232;
+
+    background: #c53232;
+
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 991px) {
+
+    .qr-copper-rod {
+
+        padding: 80px 0;
+    }
+
+
+    .qr-copper-rod-layout {
+
+        grid-template-columns: 1fr;
+
+        gap: 60px;
+    }
+
+
+    .qr-copper-rod-left {
+
+        max-width: 700px;
+    }
+
+
+    .qr-copper-rod-left h2 {
+
+        font-size: 2.9rem;
+    }
+
+
+    .qr-copper-rod-image {
+
+        height: 400px;
+    }
+
+
+    .qr-copper-process {
+
+        max-width: 700px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 575px) {
+
+    .qr-copper-rod {
+
+        padding: 65px 0;
+    }
+
+
+    .qr-copper-rod-layout {
+
+        gap: 45px;
+    }
+
+
+    .qr-copper-rod-left h2 {
+
+        font-size: 2.4rem;
+    }
+
+
+    .qr-copper-rod-tag {
+
+        margin-top: 18px;
+    }
+
+
+    .qr-copper-rod-image {
+
+        height: 280px;
+
+        margin-top: 24px;
+    }
+
+
+    .qr-process-heading {
+
+        margin-bottom: 30px;
+    }
+
+
+    .qr-process-heading h3 {
+
+        font-size: 1.65rem;
+    }
+
+
+    .qr-process-item {
+
+        grid-template-columns: 52px 1fr;
+
+        gap: 15px;
+
+        min-height: 90px;
+    }
+
+
+    .qr-process-number {
+
+        width: 44px;
+
+        height: 44px;
+
+        font-size: 0.7rem;
+    }
+
+
+    .qr-process-item:not(:last-of-type)::after {
+
+        left: 21px;
+
+        top: 43px;
+    }
+
+
+    .qr-process-content h4 {
+
+        font-size: 1rem;
+    }
+
+
+    .qr-process-content p {
+
+        font-size: 0.82rem;
+    }
+
+
+    .qr-process-tech {
+
+        padding: 18px;
+    }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .qr-copper-rod-image img,
+    .qr-process-number,
+    .qr-process-content h4,
+    .qr-process-tech b {
+
+        transition: none;
+    }
+
+}

@@ -1,0 +1,16 @@
+.coal-i {
+    background: var(--graph);
+    color: #fff;
+    padding: 36px;
+    height: 100%;
+    border-top: 3px solid var(--cu)
+}
+
+.coal-i i {
+    font-size: 2rem;
+    color: var(--cu)
+}
+
+.coal-i p {
+    color: #cfd3d9
+}

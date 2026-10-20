@@ -1,0 +1,625 @@
+/* =========================================================
+   QUANTUM RESOURCES
+   COAL TRADING FEATURE SECTIONS
+   Independent image system
+   ========================================================= */
+
+
+/* =========================================================
+   FEATURE SECTION
+   ========================================================= */
+
+.qr-coal-feature {
+    position: relative;
+
+    width: 100%;
+
+    padding: 100px 0;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   IMAGE WRAPPER
+   IMPORTANT:
+   This does NOT use .media
+   Therefore global .media animation will not affect it.
+   ========================================================= */
+
+.qr-coal-image {
+    position: relative;
+
+    width: 100%;
+
+    height: 430px;
+
+    overflow: hidden;
+
+    border-radius: 8px;
+
+    background: #0d213d;
+
+    box-shadow:
+        0 20px 45px rgba(8, 26, 49, 0.14);
+
+    isolation: isolate;
+}
+
+
+/* =========================================================
+   IMAGE
+   ========================================================= */
+
+.qr-coal-image img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    opacity: 1 !important;
+
+    visibility: visible !important;
+
+    clip-path: inset(0) !important;
+
+    transform: scale(1);
+
+    transition:
+        transform 0.9s cubic-bezier(.2, .7, .2, 1);
+}
+
+
+/* =========================================================
+   IMAGE HOVER
+   ========================================================= */
+
+.qr-coal-image:hover img {
+    transform: scale(1.05);
+}
+
+
+/* =========================================================
+   CONTENT
+   ========================================================= */
+
+.qr-coal-content {
+    position: relative;
+
+    padding: 20px 10px;
+}
+
+
+/* =========================================================
+   ICON
+   ========================================================= */
+
+.qr-coal-icon {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 58px;
+    height: 58px;
+
+    margin-bottom: 22px;
+
+    border: 1px solid rgba(197, 50, 50, 0.35);
+
+    border-radius: 50%;
+
+    background: rgba(197, 50, 50, 0.06);
+
+    color: #c53232;
+
+    font-size: 1.55rem;
+
+    transition:
+        background-color 0.35s ease,
+        color 0.35s ease,
+        transform 0.35s ease;
+}
+
+
+/* =========================================================
+   ICON HOVER
+   ========================================================= */
+
+.qr-coal-content:hover .qr-coal-icon {
+    background: #c53232;
+
+    color: #ffffff;
+
+    transform: translateY(-4px);
+}
+
+
+/* =========================================================
+   HEADING
+   ========================================================= */
+
+.qr-coal-content h2 {
+    margin: 0 0 18px;
+
+    color: #081a31;
+
+    font-size: 2.6rem;
+
+    font-weight: 800;
+
+    line-height: 1.1;
+
+    letter-spacing: -0.025em;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+   ========================================================= */
+
+.qr-coal-content p.big {
+    max-width: 520px;
+
+    margin: 0;
+
+    color: #536070;
+
+    font-size: 1.15rem;
+
+    line-height: 1.75;
+}
+
+
+/* =========================================================
+   SUBTLE RED LINE
+   ========================================================= */
+
+.qr-coal-content h2::after {
+    content: "";
+
+    display: block;
+
+    width: 50px;
+
+    height: 3px;
+
+    margin-top: 20px;
+
+    background: #c53232;
+}
+
+
+/* =========================================================
+   ALTERNATING SECTION
+   ========================================================= */
+
+.qr-coal-feature.sec-alt {
+    background: #f5f6f8;
+}
+
+
+/* =========================================================
+   IMAGE REVEAL
+   Optional subtle animation
+   DOES NOT use clip-path
+   ========================================================= */
+
+.qr-coal-image {
+    opacity: 1;
+
+    transform: translateY(0);
+
+    transition:
+        transform 0.7s cubic-bezier(.2, .7, .2, 1),
+        box-shadow 0.5s ease;
+}
+
+
+/* =========================================================
+   IMAGE CONTAINER HOVER
+   ========================================================= */
+
+.qr-coal-image:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 28px 55px rgba(8, 26, 49, 0.20);
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 991px) {
+
+    .qr-coal-feature {
+        padding: 75px 0;
+    }
+
+
+    .qr-coal-image {
+        height: 400px;
+    }
+
+
+    .qr-coal-content {
+        padding: 10px 0;
+    }
+
+
+    .qr-coal-content h2 {
+        font-size: 2.35rem;
+    }
+
+
+    .qr-coal-content p.big {
+        font-size: 1.05rem;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 575px) {
+
+    .qr-coal-feature {
+        padding: 60px 0;
+    }
+
+
+    .qr-coal-image {
+        height: 300px;
+
+        border-radius: 6px;
+    }
+
+
+    .qr-coal-content {
+        padding: 5px 0;
+    }
+
+
+    .qr-coal-icon {
+        width: 50px;
+        height: 50px;
+
+        margin-bottom: 18px;
+
+        font-size: 1.3rem;
+    }
+
+
+    .qr-coal-content h2 {
+        font-size: 2rem;
+    }
+
+
+    .qr-coal-content p.big {
+        font-size: 1rem;
+
+        line-height: 1.65;
+    }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .qr-coal-image,
+    .qr-coal-image img,
+    .qr-coal-icon {
+        transition: none;
+    }
+
+}
+
+
+/* =========================================================
+   COAL TRADING
+   DETAILED CONTENT
+   ========================================================= */
+
+
+/* =========================================================
+   LABEL
+   ========================================================= */
+
+.qr-coal-label {
+    display: block;
+
+    margin-bottom: 18px;
+
+    color: #c53232;
+
+    font-size: 0.7rem;
+
+    font-weight: 800;
+
+    letter-spacing: 0.16em;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   ICON
+   ========================================================= */
+
+.qr-coal-content .qr-coal-icon {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 54px;
+    height: 54px;
+
+    margin-bottom: 18px;
+
+    border: 1px solid rgba(197, 50, 50, 0.35);
+
+    border-radius: 50%;
+
+    background: rgba(197, 50, 50, 0.05);
+
+    color: #c53232;
+
+    font-size: 1.35rem;
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+/* =========================================================
+   ICON HOVER
+   ========================================================= */
+
+.qr-coal-content:hover .qr-coal-icon {
+    background: #c53232;
+
+    color: #ffffff;
+
+    transform: translateY(-3px);
+}
+
+
+/* =========================================================
+   HEADING
+   ========================================================= */
+
+.qr-coal-content h2 {
+    margin: 0 0 18px;
+
+    color: #081a31;
+
+    font-size: 2.55rem;
+
+    font-weight: 800;
+
+    line-height: 1.1;
+
+    letter-spacing: -0.025em;
+}
+
+
+/* =========================================================
+   LEAD TEXT
+   ========================================================= */
+
+.qr-coal-lead {
+    max-width: 540px;
+
+    margin: 0 0 30px;
+
+    color: #536070;
+
+    font-size: 1.05rem;
+
+    line-height: 1.75;
+}
+
+
+/* =========================================================
+   DETAILS
+   ========================================================= */
+
+.qr-coal-details {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 0;
+
+    max-width: 570px;
+}
+
+
+/* =========================================================
+   DETAIL ITEM
+   ========================================================= */
+
+.qr-coal-detail {
+    display: grid;
+
+    grid-template-columns: 42px 1fr;
+
+    gap: 15px;
+
+    padding: 18px 0;
+
+    border-top: 1px solid #dfe3e8;
+}
+
+
+/* Last border */
+
+.qr-coal-detail:last-child {
+    border-bottom: 1px solid #dfe3e8;
+}
+
+
+/* =========================================================
+   DETAIL ICON
+   ========================================================= */
+
+.qr-coal-detail > i {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 34px;
+    height: 34px;
+
+    border-radius: 4px;
+
+    background: #081a31;
+
+    color: #ffffff;
+
+    font-size: 0.9rem;
+
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+/* =========================================================
+   DETAIL HOVER
+   ========================================================= */
+
+.qr-coal-detail:hover > i {
+    background: #c53232;
+
+    transform: translateX(3px);
+}
+
+
+/* =========================================================
+   DETAIL TITLE
+   ========================================================= */
+
+.qr-coal-detail h4 {
+    margin: 0 0 5px;
+
+    color: #081a31;
+
+    font-size: 0.98rem;
+
+    font-weight: 800;
+
+    line-height: 1.35;
+}
+
+
+/* =========================================================
+   DETAIL DESCRIPTION
+   ========================================================= */
+
+.qr-coal-detail p {
+    margin: 0;
+
+    color: #697585;
+
+    font-size: 0.84rem;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   HOVER CONTENT
+   ========================================================= */
+
+.qr-coal-detail {
+    transition:
+        padding-left 0.3s ease,
+        background 0.3s ease;
+}
+
+.qr-coal-detail:hover {
+    padding-left: 8px;
+}
+
+
+/* =========================================================
+   DARK ALTERNATING SECTION
+   ========================================================= */
+
+.qr-coal-feature.sec-alt {
+    background: #f5f6f8;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 991px) {
+
+    .qr-coal-content h2 {
+        font-size: 2.3rem;
+    }
+
+    .qr-coal-lead {
+        font-size: 1rem;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 575px) {
+
+    .qr-coal-content h2 {
+        font-size: 2rem;
+    }
+
+    .qr-coal-label {
+        font-size: 0.65rem;
+    }
+
+    .qr-coal-lead {
+        font-size: 0.95rem;
+
+        margin-bottom: 22px;
+    }
+
+    .qr-coal-detail {
+        grid-template-columns: 38px 1fr;
+
+        gap: 12px;
+
+        padding: 16px 0;
+    }
+
+    .qr-coal-detail > i {
+        width: 32px;
+        height: 32px;
+    }
+
+    .qr-coal-detail p {
+        font-size: 0.82rem;
+    }
+
+}
